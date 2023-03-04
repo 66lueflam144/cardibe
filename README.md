@@ -153,5 +153,5 @@ git push -u origin master //将文件全部推送进远程仓库
 
 - 5.在Github选中做文件仓库的respository里点击`setting`，找到`page`。
   - 5.1 *source*选择*Deploy from a branch*——一般无需改动，默认就是这个。
-  - 5.2 *Branch*选择`master`,`/(root)`,然后点击`save`，等待一会之后上方就会出现*your site is live at*以及一个网址，这就算成功了。
-    - 5.2.1 选择`/docs`也可以，不过容易失败。
+  - 5.2 *Branch*选择*master*,*/(root)*,然后点击*save*，等待一会之后上方就会出现*your site is live at*以及一个网址，这就算成功了。
+    - 5.2.1 选择*/docs*也可以，不过容易失败。
