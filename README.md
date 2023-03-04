@@ -131,3 +131,5 @@ window.$docsify={
 };
 
 ```
+
+## step 3 配置在github上
