@@ -133,3 +133,25 @@ window.$docsify={
 ```
 
 ## step 3 配置在github上
+
+<font size=1>首先你得有个github账户以及懂git相关。
+
+然后就可以愉快的开始了。</font>
+
+- 1.搭建一个respository，不要创建README.md。
+- 2.clone 到本地
+- 3.在本地respository文件夹里使用`docsify init ./projectname`创建项目。
+- 4.使用git命令<br>
+```Bash
+git init //对文件初始化处理
+git add ./ //将文件夹添加到发送行列，执行完这一步可能会出来一些replace的话，不用在意。
+git status //检查当前状态
+git commit -m "message"  //提交
+git remote add origin xxxxx/yyy.git //本地仓库与Github上仓库关联，那段xxxyyy就是GitHub仓库名
+git push -u origin master //将文件全部推送进远程仓库
+```
+
+- 5.在Github选中做文件仓库的respository里点击`setting`，找到`page`。
+  - 5.1 *source*选择*Deploy from a branch*——一般无需改动，默认就是这个。
+  - 5.2 *Branch*选择`master`,`/(root)`,然后点击`save`，等待一会之后上方就会出现*your site is live at*以及一个网址，这就算成功了。
+    - 5.2.1 选择`/docs`也可以，不过容易失败。
