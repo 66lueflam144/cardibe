@@ -15,6 +15,9 @@ npm i docsify-cli -g
 ```
 以此来下载docsify。
 
+----
+----
+
 ## step 2 创建项目
 
 初始化创建项目的命令:arrow_down:
@@ -33,6 +36,8 @@ Get-ExecutionPOlicy -list
 set-ececutionpolicy remotesigned
 //然后会出现选项，输入y再回车即可。
 ```
+
+----
 
 ### 基础配置文件
 
@@ -82,6 +87,8 @@ set-ececutionpolicy remotesigned
 ```
 to be continue...
 
+----
+
 ### coverpage
 （前提是在`index.html`文件中设置打开了渲染封面coverpage）
 在_coverpage.md中使用markdown语法设置。
@@ -89,7 +96,8 @@ to be continue...
 ## background image
 ![](_media/bg.png)
 
-ps:好像不能正常显示本地图片作为的封面背景
+ps:可以使用本地图片，最好将图片搞到同文件夹下
+有些网络图片受保护，会403,404，CORB进而导致无法显示。
 
 ## background color
 ![color](parameter)
@@ -132,6 +140,9 @@ window.$docsify={
 
 ```
 
+----
+----
+
 ## step 3 配置在github上
 
 <font size=1>首先你得有个github账户以及懂git相关。
@@ -154,4 +165,6 @@ git push -u origin master //将文件全部推送进远程仓库
 - 5.在Github选中做文件仓库的respository里点击`setting`，找到`page`。
   - 5.1 *source*选择*Deploy from a branch*——一般无需改动，默认就是这个。
   - 5.2 *Branch*选择*master*,*/(root)*,然后点击*save*，等待一会之后上方就会出现*your site is live at*以及一个网址，这就算成功了。
-    - 5.2.1 选择*/docs*也可以，不过容易失败。
+    - 5.2.1 选择`/docs`也可以，不过容易失败。
+
+:download:
