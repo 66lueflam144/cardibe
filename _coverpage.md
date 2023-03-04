@@ -1,1 +1,1 @@
-![hello](https://pic.3gbizhi.com/2020/1014/thumb_1680_0_20201014094513569.jpg)
+<img src="https://wx4.sinaimg.cn/large/0085pjHfly1hb8xakmpmuj32ws3vq7wi.jpg" alt="oh my fucking god"/>
