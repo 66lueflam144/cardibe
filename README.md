@@ -15,8 +15,8 @@ npm i docsify-cli -g
 ```
 以此来下载docsify。
 
-----
-----
+<br>
+<br>
 
 ## step 2 创建项目
 
@@ -39,7 +39,7 @@ set-ececutionpolicy remotesigned
 
 ----
 
-### 基础配置文件
+### 2.1 基础配置文件
 
 |文件|作用|
 |---|---|
@@ -56,7 +56,7 @@ set-ececutionpolicy remotesigned
 
 :smile:如果想启用封面，侧边栏，导航栏，浏览器:arrow_down:
 
-### 对基础配置项编辑
+### 2.2 对基础配置项编辑
 
 ```html
 <!--index.html-->
@@ -89,7 +89,7 @@ to be continue...
 
 ----
 
-### coverpage
+### 2.3 coverpage
 （前提是在`index.html`文件中设置打开了渲染封面coverpage）
 在_coverpage.md中使用markdown语法设置。
 ```markdown
@@ -103,12 +103,18 @@ ps:可以使用本地图片，最好将图片搞到同文件夹下
 ![color](parameter)
 
 ps:color parameter只能是`#2f4253`这种格式。
+background image 和backg color只能选择一个。
 
 ```
 
+>background color所用颜色名格式来源于<a href="https://www.w3school.com.cn/html/html_colornames.asp">HTML颜色名</a>
+
 >由于设置封面后，封面与首页同时出现，封面在上，首页在下。使用`onlycover=true`来做到封面首页分离。一般来说，用不到。<br>如果设置了onlycover，则访问README.md需要再原地址后加`README`，即`localhost:xxxx/#/README`
 
-#### 多文件各自独立封面
+
+<br>
+
+#### 2.3.1 多文件各自独立封面
 
 
 假如项目目录结构如下
@@ -140,8 +146,8 @@ window.$docsify={
 
 ```
 
-----
-----
+<br>
+<br>
 
 ## step 3 配置在github上
 
@@ -168,5 +174,41 @@ git push -u origin master //将文件全部推送进远程仓库
     -  选择`/docs`也可以，不过容易失败。
 
 
-come and get [it](more/README.md)
+<font size=2>6.PS:<br>`git add ./`中出现的*in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it*在后续有一些影响——每一次提交后index.html文件内容就变成默认的，一切归零。<br>解决方法：
+```Bash
+git config core.autocrlf false
+```
+<a href="https://blog.csdn.net/man_zuo/article/details/88651416">参考原文</a></font>
 
+<br>
+<br>
+
+## step 4 多页
+
+如图所示：
+
+```text
+
+└── docs
+    ├── README.md
+    ├── guide.md
+    ├── _coverpage.md
+    └── zh-cn
+        ├── README.md
+        ├── guide.md
+        └── _coverpage.md
+```
+> 在docs文件夹下有子文件夹zh-cn，可以重复上述步骤创建子文件夹，也可以原始手动新建，复制一下基本文件在里面即可。最后用git命令一起push到库里。<br>在进行网页访问的时候，比如，主目录网址为`localhost:3000/#/`,访问子目录就可以`localhost:3000/#/zh-cn/#/`或者`localhost:3000/#/zh-cn/README`。
+
+### 4.1 链接md们
+
+如下所示：<br>
+come and get [it](more/README.md)
+```html
+come and get [it](more/README.md)
+```
+:arrow_down:
+
+```html
+come and get [it](子目录名/README.md)
+```
