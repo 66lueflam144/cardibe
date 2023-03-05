@@ -167,3 +167,6 @@ git push -u origin master //将文件全部推送进远程仓库
   - (2) *Branch*选择*master*,*/(root)*,然后点击*save*，等待一会之后上方就会出现*your site is live at*以及一个网址，这就算成功了。
     -  选择`/docs`也可以，不过容易失败。
 
+
+come and get [it](more/README.md)
+
