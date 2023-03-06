@@ -9,7 +9,7 @@
 <a href="https://www.runoob.com/nodejs/nodejs-tutorial.html"><br>了解Node.js请往这来</a>
 
 ## step 1 下载docsify
-有了Node.js后，可以在powersell输入<br>
+有了Node.js后，可以在powershell输入<br>
 ```Bash
 npm i docsify-cli -g
 ```
